@@ -1,0 +1,1263 @@
+html,
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+a{
+  padding:0;
+  margin:0;
+  font-weight:normal;
+}
+
+a{
+  text-decoration:none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
+p{
+  white-space:pre-wrap;
+}
+
+body{
+  min-height:100vh;
+  position:relative;
+  overflow-x:hidden;
+  box-sizing:border-box;
+  word-wrap:break-word;
+  font-family:'メイリオ', Meiryo, arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+ul{
+  list-style:none;
+}
+
+/* -----共通----- */
+.container{
+  width:95%;
+  margin:30px auto;
+}
+
+#null{
+  text-align:center;
+  color:#f00;
+  padding:20px 0;
+}
+
+#must span{
+  color:#f00;
+}
+
+.must{
+  color:#f00;
+  font-weight:normal;
+  font-size:14px;
+}
+
+/* -----共通----- */
+
+/* -----flash_message----- */
+.flash{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  background-color:#ffff99;
+  text-align:center;
+  display:block;
+}
+
+.flash h2{
+  color:#69aa1e;
+  padding:20px 0;
+}
+/* -----flash_message----- */
+
+/* -----table----- */
+table{
+  /* table-layout:fixed; */
+  border-collapse:collapse;
+}
+
+
+td{
+  font-size:14px
+}
+
+input,
+textarea,
+select{
+  padding:3px;
+  margin:3px 0;
+}
+
+#textarea{
+  width:95%;
+  height:120px;
+  margin-top:6px;
+}
+
+#content{
+  padding:15px;
+}
+
+#click{
+  width:10%;
+}
+
+#error{
+  color:#f00;
+}
+
+#detail{
+  color:#69aa1e;
+}
+#detail:hover{
+  opacity:0.5;
+}
+
+#caution{
+  color:#f00;
+  font-size:12px;
+}
+
+.conclusion{
+  outline:none;
+  border:none;
+  cursor:pointer;
+  background-color:inherit;
+  color:#69aa1e;
+  font-weight:bold;
+  font-size:13px;
+  text-decoration:underline;
+}
+.conclusion:hover{
+  transition:0.4s;
+  opacity:0.5;
+}
+
+.link{
+  text-decoration:underline;
+  color:#69aa1e;
+}
+.link:hover{
+  transition:0.4s;
+  opacity:0.5;
+}
+
+.attention{
+  background-color:#ff6666;
+  position:relative;
+}
+.attention a{
+  color:#fff;
+  font-weight:bold;
+  font-size:14px;
+}
+
+.msg{
+  position:absolute;
+  top:0;
+  padding:5px 0;
+  margin-left:52px;
+  background-color:#ff9933;
+  opacity:0.93;
+  width:150px;
+  color:#fff;
+  font-weight:bold;
+  border-radius:0 5px 5px 0;
+}
+
+#supplement{
+  color:#f00;
+  font-size:12px;
+}
+
+.index-users-btn-area,
+.index-matters-btn-area,
+.index-tasks-btn-area,
+.index-files-btn-area,
+.show-posts-btn-area-top{
+  width:40%;
+  margin:0 auto;
+  text-align:center;
+  margin-bottom:30px;
+}
+.index-files-btn-area{
+  width:60%;
+  margin:0 auto;
+  text-align:center;
+  margin-bottom:30px;
+}
+.show-posts-btn-area-bottom,
+.create-posts-btn-area,
+.edit-posts-btn-area,
+.create-matters-btn-area,
+.create-tasks-btn-area,
+.create-files-btn-area,
+.edit-users-btn-area,
+.edit-matters-btn-area,
+.edit-tasks-btn-area{
+  width:40%;
+  margin:0 auto;
+  text-align:center;
+  margin-top:30px;
+}
+.show-posts-btn-area-top a,
+.show-posts-btn-area-bottom a,
+.create-posts-btn-area a,
+.edit-posts-btn-area a,
+.create-matters-btn-area a,
+.create-tasks-btn-area a,
+.create-files-btn-area a,
+.edit-users-btn-area a,
+.edit-matters-btn-area a,
+.edit-tasks-btn-area a,
+.index-users-btn-area a,
+.index-matters-btn-area a,
+.index-tasks-btn-area a,
+.index-files-btn-area a{
+  padding:5px 40px;
+}
+.show-posts-btn-area-top a:hover,
+.show-posts-btn-area-bottom a:hover,
+.create-posts-btn-area a:hover,
+.edit-posts-btn-area a:hover,
+.create-matters-btn-area a:hover,
+.create-tasks-btn-area a:hover,
+.create-files-btn-area a:hover,
+.edit-users-btn-area a:hover,
+.edit-matters-btn-area a:hover,
+.edit-tasks-btn-area a:hover,
+.index-users-btn-area a:hover,
+.index-matters-btn-area a:hover,
+.index-tasks-btn-area a:hover,
+.index-files-btn-area a:hover{
+  text-decoration:none;
+}
+
+.show-posts-btn-area-top li,
+.show-posts-btn-area-bottom li,
+.create-posts-btn-area li,
+.edit-posts-btn-area li,
+.create-matters-btn-area li,
+.create-tasks-btn-area li,
+.create-files-btn-area li,
+.edit-users-btn-area li,
+.edit-matters-btn-area li,
+.edit-tasks-btn-area li{
+  display:inline-block;
+  margin:0 30px;
+}
+.show-posts-btn-area-top input,
+.show-posts-btn-area-bottom input,
+.create-posts-btn-area input,
+.edit-posts-btn-area input,
+.create-matters-btn-area input,
+.create-tasks-btn-area input,
+.create-files-btn-area input,
+.edit-users-btn-area input,
+.edit-matters-btn-area input,
+.edit-tasks-btn-area input{
+  padding:7px 40px;
+}
+
+.posts-must,
+.users-must,
+.matters-must,
+.tasks-must,
+.files-must{
+  width:40%;
+  margin:0 auto;
+}
+
+.index-users-table,
+.create-matters-table,
+.create-tasks-table,
+.edit-users-table,
+.edit-matters-table,
+.edit-tasks-table,
+.index-matters-table,
+.index-tasks-table,
+.index-files-table{
+  text-align:center;
+  border:2px solid #4b4944;
+  width:40%;
+  margin:0 auto;
+}
+.create-posts-table,
+.edit-posts-table,
+.create-files-table{
+  border:2px solid #4b4944;
+  width:40%;
+  margin:0 auto;
+}
+.show-posts-table{
+  table-layout:fixed;
+  border:2px solid #4b4944;
+  width:40%;
+  margin:0 auto;
+}
+.index-files-table{
+  table-layout:fixed;
+  text-align:center;
+  border:2px solid #4b4944;
+  width:70%;
+  margin:0 auto;
+}
+.index-files-table tr:first-child th:nth-of-type(4){
+  width:180px;
+}
+.index-files-table tr:first-child th:nth-of-type(6){
+  width:50px;
+}
+.show-posts-table tr:first-child th,
+.create-posts-table tr:first-child th,
+.edit-posts-table tr:first-child th{
+  width:100px;
+}
+
+.create-posts-table tr:nth-of-type(4) input,
+.edit-posts-table tr:nth-of-type(4) input{
+  width:25px;
+  text-align:center;
+}
+.create-files-table tr:first-child th,
+.edit-files-table tr:first-child th{
+  width:110px;
+}
+.index-users-table tr,
+.show-posts-table tr,
+.create-posts-table tr,
+.edit-posts-table tr,
+.create-matters-table tr,
+.create-tasks-table tr,
+.create-files-table tr,
+.edit-users-table tr,
+.edit-matters-table tr,
+.edit-tasks-table tr,
+.index-matters-table tr,
+.index-tasks-table tr,
+.index-files-table tr{
+  border-bottom:1px solid #4b4944;
+  height:35px;
+}
+.show-posts-table tr:first-child,
+.index-users-table tr:first-child,
+.index-matters-table tr:first-child,
+.index-tasks-table tr:first-child,
+.index-files-table tr:first-child{
+  border-bottom:2px solid #4b4944;
+  background-color:#f3ecd8;
+}
+.index-users-table tr:nth-of-type(even),
+.show-posts-table tr:nth-of-type(even),
+.create-posts-table tr:nth-of-type(even),
+.edit-posts-table tr:nth-of-type(even),
+.create-matters-table tr:nth-of-type(even),
+.create-tasks-table tr:nth-of-type(even),
+.create-files-table tr:nth-of-type(even),
+.edit-users-table tr:nth-of-type(even),
+.edit-matters-table tr:nth-of-type(even),
+.edit-tasks-table tr:nth-of-type(even),
+.index-matters-table tr:nth-of-type(even),
+.index-tasks-table tr:nth-of-type(even),
+.index-files-table tr:nth-of-type(even){
+  background-color:#fffff4;
+}
+.index-users-table th,
+.index-matters-table th,
+.index-tasks-table th,
+.index-files-table th{
+  border-left:1px solid #4b4944;
+  font-size:14px;
+  color:#4b4944;
+}
+.show-posts-table th,
+.create-posts-table th,
+.edit-posts-table th,
+.create-matters-table th,
+.create-tasks-table th,
+.create-files-table th,
+.edit-users-table th,
+.edit-matters-table th,
+.edit-tasks-table th{
+  border-right:1px solid #4b4944;
+}
+.create-matters-table input,
+.create-tasks-table input,
+.edit-users-table input,
+.edit-matters-table input,
+.edit-tasks-table input{
+  width:97%;
+}
+.create-posts-table input,
+.create-posts-table select,
+.edit-posts-table input,
+.edit-posts-table select{
+  margin-left:10px;
+}
+.create-posts-table textarea,
+.edit-posts-table textarea{
+  margin-left:10px;
+}
+.create-files-table input:first-child,
+.create-files-table textarea{
+  margin-left:10px;
+}
+.create-files-table select{
+  width:40%;
+  margin-left:10px;
+}
+.index-users-table td,
+.index-matters-table td,
+.index-tasks-table td,
+.index-files-table td{
+  border-left:1px solid #4b4944;
+  padding:2px;
+}
+.show-posts-table th,
+.show-posts-table td{
+  padding:5px;
+}
+/* -----[show.blade.php]用----- */
+#reset{
+  border-bottom:1px solid #4b4944;
+  background-color:inherit;
+}
+/* -----[show.blade.php]用----- */
+
+#admin span{
+  color:#f00;
+  font-size:11px;
+}
+/* -----table----- */
+
+/* -----btn----- */
+.btn-area,
+.btn-area-show{
+  margin:20px auto;
+  text-align:center;
+}
+
+.btn-area-posts-show{
+  width:50%;
+  margin:20px 0;
+}
+
+.btn-area li,
+.btn-area-show li{
+  display:inline-block;
+  margin:0 40px;
+}
+
+.btn-area input{
+  border:none;
+  outline:none;
+  background-color:inherit;
+  cursor:pointer;
+  padding:5px 50px;
+}
+
+.btn-area input:hover{
+  transition:0.4s;
+  background-color:#fff;
+}
+
+.btn-area a,
+.btn-area-show a{
+  padding:5px 50px;
+}
+
+.btn-area a:hover,
+.btn-area-show a:hover{
+  transition:0.4s;
+  text-decoration:none;
+}
+
+#radio-space{
+  text-align:center;
+}
+#radio-space input{
+  margin:0 10px 0 5px;
+}
+
+#new,
+#submit{
+  border-radius:7px;
+  border:1px solid #69aa1e;
+  background-color:#69aa1e;
+  color:#fff;
+  cursor:pointer;
+}
+
+#new-user{
+  border-radius:7px;
+  border:1px solid #ff9933;
+  background-color:#ff9933;
+  color:#fff;
+}
+
+#new:hover,
+#submit:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#69aa1e;
+}
+
+#new-user:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#ff9933;
+}
+
+#back{
+  border-radius:7px;
+  border:1px solid #999;
+  background-color:#999;
+  color:#fff;
+  cursor:pointer;
+}
+
+#back:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#999;
+}
+
+/* 枠無Ver----- */
+#edit{
+  color:#69aa1e;
+}
+
+#download{
+  color:#69aa1e;
+  text-decoration:underline;
+}
+
+#download:hover{
+  opacity:0.5;
+}
+
+/* 枠有Ver----- */
+.edit{
+  border-radius:7px;
+  border:1px solid #69aa1e;
+  background-color:#69aa1e;
+  color:#fff;
+}
+
+.edit:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#69aa1e;
+}
+
+/* 枠無Ver----- */
+#delete{
+  border:none;
+  outline:none;
+  background-color:inherit;
+  color:#f00;
+  font-size:14px;
+  cursor:pointer;
+}
+
+#delete:hover{
+  text-decoration:underline;
+}
+
+/* 枠有Ver----- */
+.delete{
+  border:1px solid #f00;
+  border-radius:7px;
+  outline:none;
+  background-color:#f00;
+  color:#fff;
+  font-size:16px;
+  padding:5px 51px;
+  cursor:pointer;
+}
+
+.delete:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#f00;
+}
+
+/* -----btn----- */
+
+
+/* -----各ページ見出し----- */
+.page-title{
+  color:#69aa1e;
+  margin:0 0 50px;
+  border-bottom:2px solid #69aa1e;
+}
+.page-title p{
+  font-size:28px;
+  font-weight:bold;
+}
+
+/* -----welcome----- */
+.welcome{
+  position:relative;
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100vh;
+  display:grid;
+  align-items:center;
+}
+
+.welcome-sub{
+  width:50%;
+  margin:0 auto 150px;
+  text-align:center;
+}
+
+.welcome-logo{
+  width:55%;
+  margin:50px auto 30px;
+}
+
+.welcome-logo img{
+  width:100%;
+}
+
+.welcome-btn{
+  width:30%;
+  margin:0 auto;
+  /* jQuery用--- */
+  transform:translate(0, 50px);
+  opacity:0;
+  /* jQuery用--- */
+}
+
+.welcome-btn.add{
+  transition:0.4s;
+  transform:translate(0, 0);
+  opacity:1;
+}
+
+.welcome-btn a{
+  display:block;
+  background-color:#69aa1e;
+  border:2px solid #69aa1e;
+  border-radius:7px;
+  color:#fff;
+  padding:15px 0;
+  font-weight:bold;
+}
+
+.welcome-btn a:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#69aa1e;
+  text-decoration:none;
+}
+/* -----welcome----- */
+
+
+/* -----Auth系----- */
+.login-main .anime-1,
+.login-main .anime-2,
+.login-main .anime-3,
+.login-main .anime-4,
+.login-main .anime-5,
+.register-main .anime-1,
+.register-main .anime-2,
+.register-main .anime-3,
+.register-main .anime-4,
+.register-main .anime-5,
+.register-main .anime-6,
+.register-main .anime-7,
+.register-main .anime-8,
+.register-main .anime-9{
+  transform:translate(0, 50px);
+  opacity:0;
+}
+.login-main .anime-1.add,
+.login-main .anime-2.add,
+.login-main .anime-3.add,
+.login-main .anime-4.add,
+.login-main .anime-5.add,
+.register-main .anime-1.add,
+.register-main .anime-2.add,
+.register-main .anime-3.add,
+.register-main .anime-4.add,
+.register-main .anime-5.add,
+.register-main .anime-6.add,
+.register-main .anime-7.add,
+.register-main .anime-8.add,
+.register-main .anime-9.add{
+  transition:0.4s;
+  transform:translate(0, 0);
+  opacity:1;
+}
+
+.login-main .anime-6,
+.register-main .anime-10{
+  opacity:0;
+}
+.login-main .anime-6.add,
+.register-main .anime-10.add{
+  transition:0.4s;
+  opacity:1;
+}
+.register-main .anime-9,
+.register-main .anime-10{
+  text-align:center;
+}
+
+.email-main-title,
+.login-main-title,
+.register-main-title{
+  margin:0 0 40px;
+}
+
+.email-main-title p,
+.login-main-title p,
+.register-main-title p{
+  width:50%;
+  margin:0 auto;
+  font-size:25px;
+  font-weight:bold;
+  color:#69aa1e;
+  border-bottom:2px solid #4b4944;
+}
+.login-main a,
+.register-main a,
+.email-main a{
+  color:#69aa1e;
+  text-decoration:underline;
+}
+
+.login-main a:hover,
+.register-main a:hover,
+.email-main a:hover{
+  opacity:0.5;
+}
+
+.login-main ul,
+.register-main ul,
+.email-main ul{
+  width:100%;
+}
+
+.login-main li,
+.register-main li,
+.email-main li{
+  margin:0 auto 5px;
+  width:51%;
+  text-align:left;
+}
+
+.login-main li:last-child{
+  text-align:center;
+}
+
+.login-main label,
+.register-main label,
+.email-main label{
+  color:#69aa1e;
+  font-weight:bold;
+  font-size:20px;
+  width:51%;
+  margin:0 auto 0 2px;
+}
+
+#head-space{
+  margin-top:30px;
+}
+
+.login-main input,
+.register-main input,
+.email-main input{
+  width:100%;
+  padding:5px 10px;
+  border-radius:5px;
+  outline:none;
+  font-size:16px;
+  border-style:solid;
+  border-color:#595959;
+  box-shadow:none;
+}
+
+.login-main input:hover,
+.register-main input:hover,
+.email-main input:hover{
+  background-color:#fffff4;
+}
+
+#remember{
+  width:2%;
+  cursor:pointer;
+  font-size:15px;
+}
+
+.login-main button,
+.register-main button,
+.email-main button{
+  border:none;
+  outline:none;
+  background-color:#69aa1e;
+  border:2px solid #69aa1e;
+  border-radius:7px;
+  color:#fff;
+  font-weight:bold;
+  cursor:pointer;
+  padding:10px 100px;
+}
+
+.login-main button:hover,
+.register-main button:hover,
+.email-main button:hover{
+  transition:0.4s;
+  background-color:#fff;
+  color:#69aa1e;
+}
+
+.login-main .invalid-feedback::before,
+.register-main .invalid-feedback::before{
+  content:"\A";
+  white-space:pre;
+}
+
+.login-main .invalid-feedback strong,
+.register-main .invalid-feedback strong{
+  color:#f00;
+  font-weight:normal;
+}
+/* -----Auth系----- */
+
+
+/* -----layouts.index----- */
+header{
+  width:100%;
+  display:grid;
+  height:100px;
+  grid-template-columns:1fr 1fr;
+  border-bottom:1px solid #69aa1e;
+}
+
+.header-logo{
+  display:grid;
+  align-items:center;
+  grid-column:1 / 2;
+}
+
+.header-logo img{
+  width:25%;
+  margin-left:20px;
+}
+
+.header-btn{
+  display:grid;
+  align-items:end;
+  justify-content:end;
+  grid-column:2 / 3;
+}
+.header-btn li{
+  display:grid;
+  justify-content:end;
+  margin:0 20px 5px 0;
+  color:#69aa1e;
+  font-weight:bold;
+}
+.header-btn li a{
+  color:#69aa1e;
+  font-weight:bold;
+}
+.header-btn li a:hover{
+  transition:0.4s;
+  opacity:0.5;
+}
+
+main{
+  display:grid;
+  grid-template-columns:250px 1fr;
+  grid-template-rows:23fr 1fr;
+  position:relative;
+  min-height:100vh;
+  position:relative;
+  box-sizing:border-box;
+}
+
+.left-side{
+  grid-column:1 / 2;
+  grid-row:1 / 2;
+  background-color:#69aa1e;
+  color:#fff;
+  font-size:19px;
+}
+
+.left-side nav{
+  padding:18px;
+}
+
+.left-side #nav-user{
+  font-weight:bold;
+}
+
+.left-side #nav-title{
+  border-bottom:2px solid #fff;
+  margin:15px 0 7px;
+}
+
+.left-side #nav-title a{
+  font-weight:bold;
+  color:#fff;
+}
+
+.left-side #nav-title a:hover{
+  transition:0.4s;
+  color:#ffff99;
+  text-decoration:none;
+}
+
+.left-side #nav-link{
+  margin-left:15px;
+}
+
+.left-side #nav-link a{
+  color:#fff;
+  font-size:16px;
+}
+
+.left-side #nav-link a:hover{
+  transition:0.4s;
+  color:#ffff99;
+}
+
+.left-side #nav-file{
+  margin-top:15px;
+}
+
+.left-side #nav-file a{
+  color:#fff;
+  font-weight:bold;
+}
+
+.left-side #nav-file a:hover{
+  transition:0.4s;
+  color:#ffff99;
+}
+
+.right-side{
+  display:grid;
+  grid-template-rows:1fr 22fr;
+  grid-column:2 / 3;
+  grid-row:1 / 2;
+}
+.right-side .right-head{
+  display:grid;
+  align-items:center;
+  text-align:center;
+  color:#fff;
+  grid-row:1 / 2;
+  background-color:#69aa1e;
+}
+.right-head h2{
+  display:grid;
+  align-items:center;
+}
+.right-side .container{
+  grid-row:2 / 3;
+}
+
+footer{
+  display:grid;
+  align-items:center;
+  grid-column:1 / 3;
+  grid-row:2 / 3;
+  background-color:#fff;
+  border-top:2px solid #69aa1e;
+  text-align:center;
+  color:#fff;
+}
+
+footer p{
+  color:#4b4944;
+}
+
+/* -----layouts.index----- */
+
+/* -----sub-header（カレンダー＆完了タスク一覧ボタン）----- */
+.sub-header{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  margin-bottom:7px;
+}
+
+.date-select{
+  grid-column:1 / 2;
+}
+.date-select p{
+  color:#69aa1e;
+  font-weight:bold;
+}
+.date-select input{
+  background-color:#ccffcc;
+  border:2px solid #69aa1e;
+  border-radius:3px;
+  color:#69aa1e;
+  outline:none;
+}
+.date-select #set{
+  border:none;
+  border:1px solid #69aa1e;
+  border-radius:5px;
+  outline:none;
+  color:#fff;
+  font-weight:bold;
+  padding:5px 20px;
+  cursor:pointer;
+  background-color:#69aa1e;
+}
+.date-select #set:hover{
+  transition:0.2s;
+  color:#69aa1e;
+  background-color:#fff;
+}
+.date-select #return{
+  color:#69aa1e;
+  font-size:14px;
+  text-decoration:underline;
+}
+.date-select #return:hover{
+  opacity:0.5;
+}
+
+.conclusions-btn{
+  display:grid;
+  grid-column:2 / 3;
+  align-items:end;
+  justify-content:end;
+  margin-right:4px;
+}
+.conclusions-btn a{
+  text-decoration:underline;
+  color:#69aa1e;
+  font-size:14px;
+}
+.conclusions-btn a:hover{
+  transition:0.4s;
+  opacity:0.5;
+}
+/* -----sub-header（カレンダー＆完了タスク一覧ボタン）----- */
+
+
+/* -----breadcrumbs----- */
+.breadcrumb{
+  text-align:left;
+  margin-left:20px;
+}
+.breadcrumb li{
+  font-size:15px;
+  font-weight:bold;
+  display:inline-block;
+}
+.breadcrumb li a{
+  font-size:15px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:underline;
+  opacity:0.8;
+}
+.breadcrumb li a:hover{
+  transition:0.4s;
+  opacity:0.4;
+}
+/* .breadcrumb li::after{
+  content:">";
+} */
+/* -----breadcrumbs----- */
+
+
+
+/* -----ガントチャート共通----- */
+.index-posts-btn-area{
+  text-align:center;
+  margin:30px 0;
+}
+.index-posts-btn-area li:nth-of-type(2){
+  margin:15px 0;
+  font-size:14px;
+}
+.index-posts-btn-area li:nth-of-type(2) a{
+  text-decoration:underline;
+  color:#69aa1e;
+}
+.index-posts-btn-area li:nth-of-type(2) a:hover{
+  transition:0.4s;
+  opacity:0.5;
+}
+.index-posts-btn-area a{
+  padding:7px 50px;
+}
+.index-posts-btn-area a:hover{
+  text-decoration:none;
+}
+
+.index-posts{
+  display:grid;
+  grid-template-columns:820px 1fr;
+}
+.index-conclusions{
+  width:60%;
+  margin:0 auto;
+}
+
+.index-posts-table{
+  table-layout:fixed;
+  grid-column:1 / 2;
+  width:100%;
+  border:2px solid #4b4944;
+  text-align:center;
+}
+.index-conclusions-table{
+  table-layout:fixed;
+  width:100%;
+  border:2px solid #4b4944;
+  text-align:center;
+}
+.index-posts-table tr,
+.index-conclusions-table tr{
+  border-bottom:1px solid #4b4944;
+  height:32px;
+}
+.index-posts-table tr:first-child,
+.index-conclusions-table tr:first-child{
+  background-color:#f3ecd8;
+}
+.index-posts-table tr:last-child,
+.index-conclusions-table tr:last-child{
+  border-bottom:none;
+}
+.index-posts-table tr:first-child th:first-child,
+.index-posts-table tr:first-child th:nth-of-type(2),
+.index-posts-table tr:first-child th:last-child,
+.index-conclusions-table tr:first-child th:first-child,
+.index-conclusions-table tr:first-child th:nth-of-type(2),
+.index-conclusions-table tr:first-child th:nth-of-type(6){
+  width:50px;
+}
+.index-posts-table tr:first-child th:nth-of-type(5),
+.index-conclusions-table tr:first-child th:nth-of-type(5){
+  width:70px;
+}
+.index-conclusions-table tr:first-child th:nth-of-type(7),
+.index-conclusions-table tr:first-child th:last-child{
+  width:100px;
+}
+
+.index-posts-table tr:nth-of-type(even),
+.index-conclusions-table tr:nth-of-type(even){
+  background-color:#fffff4;
+}
+.index-posts-table th,
+.index-conclusions-table th{
+  font-size:14px;
+  color:#4b4944;
+}
+.index-posts-table th,
+.index-posts-table td,
+.index-conclusions-table th,
+.index-conclusions-table td{
+  border-right:1px solid #4b4944;
+}
+.index-posts-table th:last-child,
+.index-posts-table td:last-child,
+.index-conclusions-table th:last-child,
+.index-conclusions-table td:last-child{
+  border-right:none;
+}
+
+.matter,
+.task{
+  text-align:left;
+  padding-left:5px;
+}
+
+.schedule{
+  grid-column:2 / 3;
+  overflow-x:auto;
+  white-space:nowrap;
+  border-right:2px solid #4b4944;
+}
+.schedule>*{
+  white-space: normal;
+}
+.schedule:hover{
+  cursor:move;
+}
+
+.schedule-table{
+  table-layout:fixed;
+  border-top:2px solid #4b4944;
+  border-bottom:1px solid #4b4944;
+  background-color:#f3ecd8;
+}
+.schedule-table tr{
+  height:32px;
+}
+.schedule-table th{
+  border-right:1px solid #4b4944;
+  padding:1px 5px;
+  font-size:14px;
+  color:#4b4944;
+  width:100vh;
+}
+.schedule-table th:last-child{
+  border-right:none;
+}
+
+.schedule-table .week0,
+.schedule-table .week6,
+.schedule-table #holiday,
+.date-table #week0,
+.date-table #week6,
+.date-table .holiday{
+  background-color:#bbb;
+}
+
+.date-table{
+  table-layout:fixed;
+  border-bottom:1px solid #4b4944;
+}
+.date-table:nth-of-type(even){
+  background-color:#fffff4;
+}
+.date-table p{
+  font-weight:bold;
+  opacity:0;
+  font-size:14px;
+}
+.date-table:last-child{
+  border-bottom:2px solid #4b4944;
+}
+.date-table tr{
+  height:31px;
+}
+.date-table th{
+  width:50px;
+  border-right:1px solid #4b4944;
+  padding:0 5px;
+  width:100vh;
+}
+.date-table th:last-child{
+  border-right:none;
+}
+
+.target{
+  background-color:#84d526;
+}
+/* -----ガントチャート共通----- */
