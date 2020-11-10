@@ -1,0 +1,46 @@
+●パス
+
+・File Zilla
+（青野専用）
+sv912.xserver.jp
+aono@kobokushi.net
+L7ydYhXs
+
+・WordPress navelログイン
+zenken
+navel
+
+【旧】
+https://navel.kobokushi.net/wp-admin/
+naveladmin
+GwjsghOpF82O
+
+・FTP navelログイン
+sv912.xserver.jp
+navel@kobokushi.net
+GwjsghOpF82O
+
+・FTP seo_lougeログイン
+cpzn.sixcore.jp
+seo-lounge.jp
+7iv14ffl
+
+・seo_Loungeログインパス
+URL：http://dev.seo-lounge.jp/
+admin
+%_ecs-LQcyK#
+
+・phpMyAdmin
+ユーザ名：root
+パスワード：なし
+
+AWS
+【プライベート】
+アカウントID：908522497462
+Email：rome7paris10@gmail.com
+PW：oranda@0226
+
+【全研】
+アカウントID：840036428312
+Email：shin_aono
+PW：oranda0226
